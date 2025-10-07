@@ -1,7 +1,12 @@
 import cors from 'cors'
 import express, { json } from 'express'
+import swaggerUi from 'swagger-ui-express'
+import * as swaggerDocument from './api-docs/openapi.json'
 
 const server = express()
+
+server.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+
 server.use(
   cors({
     origin: 'http://localhost:3000' // allow only your React app, add other urls if you have deployments
