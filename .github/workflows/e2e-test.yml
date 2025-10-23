@@ -48,9 +48,9 @@ jobs:
         with:
           start: npm start
           config-file: cypress/config/local.config.ts
-          record: true
-          group: local
-          tag: local
+          #record: true
+          #group: local
+          #tag: local
 
 
       # We do schema testing within the api e2e
