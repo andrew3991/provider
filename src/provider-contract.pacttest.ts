@@ -5,12 +5,14 @@ import { buildVerifierOptions } from './test-helpers/pact-utils/build-verifier-o
 import { truncateTables } from '../scripts/truncate-tables'
 import { requestFilter } from './test-helpers/pact-utils/pact-request-filter'
 
-
 describe('Pact Verification (Local)', () => {
   const port = process.env.PORT || '3001'
 
   // The path to your local Pact file
-  const pactFile = path.resolve(__dirname, '../pacts/WebConsumer-MoviesAPI.json')
+  const pactFile = path.resolve(
+    __dirname,
+    '../pacts/WebConsumer-MoviesAPI.json'
+  )
   // 👆 Adjust the name/path depending on your consumer contract location
   ///Users/andvardy/Projects/Learning/provider/pacts/WebConsumer-MoviesAPI.json
 
@@ -25,7 +27,7 @@ describe('Pact Verification (Local)', () => {
       await truncateTables()
       return Promise.resolve()
     },
-    logLevel: 'info',
+    logLevel: 'info'
   }
 
   const verifier = new Verifier(options)
