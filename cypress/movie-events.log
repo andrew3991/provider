@@ -1,0 +1,6 @@
+{"topic":"movie-created","messages":[{"key":"1","value":"{\"id\":1,\"name\":\"Inception\",\"year\":2010,\"rating\":7.5}"}]}
+{"topic":"movie-updated","messages":[{"key":"1","value":"{\"id\":1,\"name\":\"Inception Updated\",\"year\":2015,\"rating\":8}"}]}
+{"topic":"movie-deleted","messages":[{"key":"1","value":"{\"id\":1,\"name\":\"Inception Updated\",\"year\":2015,\"rating\":8}"}]}
+{"topic":"movie-created","messages":[{"key":"2","value":"{\"id\":2,\"name\":\"curriculum veritas volubilis\",\"year\":1998,\"rating\":3.8}"}]}
+{"topic":"movie-updated","messages":[{"key":"2","value":"{\"id\":2,\"name\":\"amitto corporis solus\",\"year\":1992,\"rating\":3.4}"}]}
+{"topic":"movie-deleted","messages":[{"key":"2","value":"{\"id\":2,\"name\":\"amitto corporis solus\",\"year\":1992,\"rating\":3.4}"}]}
